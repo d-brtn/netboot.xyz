@@ -1,10 +1,10 @@
-boot_domain: boot.netboot.xyz
+boot_domain: 2182onprem.hf.intel.com/static/netboot
 boot_timeout: 300000
 boot_version: 2.x
 bootloader_disks:
 - netboot.xyz
 bootloader_http_enabled: true
-bootloader_https_enabled: true
+bootloader_https_enabled: False
 bootloaders:
   arm:
   - desc: DHCP EFI boot image file, uses built-in iPXE NIC drivers
@@ -111,7 +111,7 @@ ipxe_debug_options: httpcore,tls
 ipxe_repo: https://github.com/ipxe/ipxe
 ipxe_source_dir: /usr/src/ipxe
 kernel_params: initrd=initrd.magic ${cmdline}
-live_endpoint: https://github.com/netbootxyz
+live_endpoint: http://2182onprem.hf.intel.com/static/live
 memdisk_location: http://${boot_domain}/memdisk
 netbootxyz_conf_dir: /etc/netbootxyz
 netbootxyz_root: /var/www/html

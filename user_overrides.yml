@@ -7,10 +7,12 @@ generate_checksums: true
 generate_local_vars: true
 
 # set desired site name
-# site_name: mysitename.com
+site_name: 2182onprem
 
 # set desired boot domain
-# boot_domain: boot.mysitename.com
+#boot_domain: $(boot_domain)
+boot_domain: 2182onprem.hf.intel.com/static/netboot
+live_endpoint: 2182onprem.hf.intel.com/static/live
 
 # set boot version
 # boot_version: "2.x"
